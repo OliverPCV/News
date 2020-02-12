@@ -1,0 +1,19 @@
+<div class="body">
+  <div class="search">
+    <input class="searchbar" [(ngModel)]="search" placeholder="search" type="text" ><button class="searchicon" (click)="clickedButton()"><fa-icon  [icon]="faSearch"></fa-icon></button>
+    <i class="fas fa-band-aid"></i>
+  </div>
+  <div class="container">
+    <button class="back" (click)="goBack()" *ngIf="back"><fa-icon  [icon]="faArrowLeft"></fa-icon>Go Back</button>
+    <h1>{{nothing}}</h1>
+
+    <div class="ahoj" *ngFor="let user of articles">
+      <div class="text">
+        <h1>{{ user.author}}</h1>
+        <h3>{{ user.title}}</h3>
+        <p class="publishedAt">{{ user.publishedAt}}</p>
+        <p class="description">{{ user.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
