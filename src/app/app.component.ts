@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {faAlignJustify, faArrowLeft, faSearch} from '@fortawesome/free-solid-svg-icons';
+import {faAlignJustify, faArrowLeft, faArrowRight, faSearch} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -15,11 +15,12 @@ export class AppComponent {
   private nothing = '';
   faSearch = faSearch;
   faArrowLeft = faArrowLeft;
-  private adresa = 'https://newsapi.org/v2/everything?q=bitcoin&from=2020-01-12&sortBy=publishedAt&apiKey=9cfbf2304e8248d0a332605e34ce2258';
+  faArrowRight = faArrowRight;
+  private adresa = 'https://newsapi.org/v2/everything?q=bitcoin&from=2020-01-13&sortBy=publishedAt&apiKey=fddabefe215a48b0a93f0f151dc55caf\n';
 
   clickedButton() {
     this.back = true;
-    this.adresa = 'https://newsapi.org/v2/everything?q=' + this.search + '&from=2020-01-12&sortBy=publishedAt&apiKey=9cfbf2304e8248d0a332605e34ce2258';
+    this.adresa = 'https://newsapi.org/v2/everything?q=' + this.search + '&from=2020-01-14&sortBy=publishedAt&apiKey=fddabefe215a48b0a93f0f151dc55caf';
     if (this.search === '') {
       this.nothing = 'Error nothing found';
     }

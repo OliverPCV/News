@@ -4,15 +4,12 @@
   box-sizing: border-box;
 
 }
-
-.search{
+.search {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-
-
 }
 
 .search .searchbar{
@@ -30,6 +27,7 @@
   border: 1px solid #009688;
   background-color: #f6ffff;
 }
+
 .searchicon{
   height: 36px;
   width: 70px;
@@ -37,7 +35,6 @@
   outline: none;
   border: 1px solid black;
   cursor: pointer;
-
 }
 
 .searchicon:hover{
@@ -68,28 +65,57 @@
 
 .container input{
   width: 400px;
-
 }
 
-.ahoj{
+.newscard{
   width: 600px;
   background-color: white;
   margin-left: 200px;
-  border-radius: 5px;
-  border-bottom: 1px solid black;
+  margin-top: 30px;
+  border-bottom: 0.5px solid black;
 }
-
-.ahoj:hover{
+.newscard:hover{
   background-color: #f6ffff;
 }
 
-.ahoj .text{
+
+
+.newscard .text{
+  display: inline-block;
   margin-left: 10px;
+
+}
+.newscard .text .title{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.newscard img{
+  display: inline-block;
+  padding: 5px;
+  max-width: 50%;
+  float: left;
 }
 
-.ahoj h1{
+.newscard .text .author{
   color: cadetblue;
+  font-family: 'Lato', sans-serif;
 }
-.ahoj .publishedAt{
+
+.newscard .text .publishedAt{
   color: darkred;
+}
+
+.newscard .text .description{
+  font-family: 'PT Sans', sans-serif;
+}
+
+.newscard .link{
+  text-decoration: none;
+  padding: 10px;
+  float: right;
+}
+
+.newscard .link:hover{
+  color: #ff7069;
 }
